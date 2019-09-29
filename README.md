@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/MohamedTawfik2019/Space%20Game%20-%20web/_apis/build/status/MohammedTawfik.mslearn-tailspin-spacegame-web?branchName=build-pipeline)](https://dev.azure.com/MohamedTawfik2019/Space%20Game%20-%20web/_build/latest?definitionId=1&branchName=build-pipeline)
 
 # Contributing
 
