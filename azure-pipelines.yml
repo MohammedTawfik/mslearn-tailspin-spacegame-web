@@ -39,6 +39,10 @@ steps:
   parameters:
     configuration: 'Debug'
 
+- template: templates/build.yml
+  parameters:
+    configuration: 'Realease'
+
 - task: DotNetCoreCLI@2
   displayName: 'Run Unit Tests for $(buildConfiguration)'
   inputs:
@@ -46,10 +50,6 @@ steps:
     arguments: '--configuration $(buildConfiguration) --no-build'
     publishWebProjects: false
     projects: '**/*.Tests.csproj'
-
-- template: templates/build.yml
-  parameters:
-    configuration: 'Realease'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
