@@ -39,7 +39,7 @@ steps:
   parameters:
     configuration: 'Debug'
 
-- task:
+- task: DotNetCoreCLI@2
   displayName: 'Run Unit Tests for $(buildConfiguration)'
   inputs:
     command: 'test'
