@@ -39,6 +39,14 @@ steps:
   parameters:
     configuration: 'Debug'
 
+- task:
+  displayName: 'Run Unit Tests for $(buildConfiguration)'
+  inputs:
+    command: 'test'
+    arguments: '--configuration $(buildConfiguration) --no-build'
+    publishWebProjects: false
+    projects: '**/*.tests.csproj'
+
 - template: templates/build.yml
   parameters:
     configuration: 'Realease'
